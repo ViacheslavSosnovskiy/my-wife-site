@@ -27,6 +27,7 @@ p {
 ul, ol {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 img {
@@ -138,7 +139,7 @@ button {
     background-color:#2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/герой/Img1.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
 }
 
 .section-hero h1 {
@@ -177,45 +178,6 @@ button {
     color: var(--primary-white-color);
 }
 
-/* ============= ПРЕИМУЩЕСТВА =============== */
-
-.section-advantages .container {
-    padding-top: 94px;
-}
-
-.advantages h3 {
-    margin-bottom: 10px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-}
-
-.advantages p {
-    font-size: 14px;
-    line-height: 1.71;
-}
-
-.advantages {
-    display: flex;
-}
-
-.advantages .item:not(:last-child){
-    margin-right: 30px;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-
 /* ============= ЗАНЯТИЕ =============== */
 
 .section-occupation .container {
@@ -234,12 +196,8 @@ button {
 
 .occupation-list {
     display: flex;
+    justify-content: space-between;
 }
-
-.occupation-list .item:not(:last-child){
-    margin-right: 30px;
-}
-
 
 /*  встплывающее окно  */
 .occupation-wrapper {
@@ -263,7 +221,7 @@ button {
     background-color: rgba(47, 48, 58, 0.8);
 
 }
-/* ============= Наша команда / svg  =============== */
+/* ============= ОБО МНЕ / svg  =============== */
 
 .svg-icons {
     fill: #AFB1B8;
@@ -299,7 +257,7 @@ button {
     background-color:var(--accent-color);
 }
 
-/* ============= Наша команда  =============== */
+/* ============= ОБО МНЕ  =============== */
 .section-team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -317,6 +275,7 @@ button {
 
 .team-list {
     display: flex;
+    justify-content: center;
 }
 
 .team-list .item:not(:last-child){
@@ -369,7 +328,7 @@ button {
 
 .clients-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .item-clients {
@@ -441,212 +400,4 @@ button {
 
 .footer-contacts .item:not(:last-child){
     margin-bottom: 9px;
-}
-
- /*  ПРИСОЕДИНЯЙТЕСЬ  */
-
- .footer-social-list {
-     display: flex;
-     margin-top: 20px;  /* от присоединяйтесь*/
- }
-
-.footer-social-list .social-item:not(:last-child){
-    margin-right: 10px;
-}
-
-.join {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--primary-white-color);
-}
-
-.social-link .white{
-    fill:var(--primary-white-color);
-}
-
-.footer-social-list .social-link {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-social-list .social-link:hover,
-.footer-social-list .social-link:focus {
-    background-color: var(--accent-color);
-}
-
-
-
-/* страничка портфолио*/
-
-
-/* ============== ХОВЕР НА ССЫЛКАХ ============ */
-
-.list {
-    list-style: none;
-}
-
-.navigation-list a:hover,
-.navigation-list a:focus {
-    color: var(--accent-color);
-}
-
-.contacts-list a:hover,
-.contacts-list a:focus {
-    color: var(--accent-color);
-}
-
-/* ==============  КНОПКИ портфолио  ============== */
-
-.buttons-list {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 56px;
-}
-
-.section-buttons button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-
-    padding: 6px 22px;
-    border-radius: 4px;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-    
-.buttons-list .item:not(:last-child){
-    margin-right: 8px;
-}
-
-.buttons-list .button:hover,
-.buttons-list .button:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-}
-
-/* ============== ССЫЛКИ  работ портфолио ============== */
-
-.works-list h3 {
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-
-    color:var(--primary-text-color);
-}
-
-.works-list p {
-    color:var(--title-text-color);
-    font-size: 16px;
-    line-height: 1.87;
-}
-
-.works-list {
-    display:flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
-.works-list img {
-    max-width: 100%;
-}
-
-.works-list > .item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.card-works {
-    padding: 20px 24px;
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-} 
-
-.works-list .item:hover,
-.works-list .item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
-}
-
-.section-works .container {
-    padding-bottom: 94px;
-}
-
-.works-wrapper {
-    position : relative;
-    overflow: hidden;
-}
-
-.works-list .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    color:var(--primary-white-color);
-    padding: 63px 24px; 
-    /* overflow: scroll; */
-
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-wrapper:hover .overlay,
-.link-wrapper:focus .overlay {
-    transform: translateY(0%);
-} 
-
-/*==============  backdrop  =================*/
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 4px
-}
-
-.modal-button {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin-left: auto;
-    border-radius: 50%;
-    margin-top: 8px;
-    margin-right: 8px;
-    outline: none;
-
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 }
